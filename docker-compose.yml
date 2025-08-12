@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres-usuario
+    restart: always
+    environment:
+      POSTGRES_DB: login-tarefas
+      POSTGRES_USER: bruno
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/login-tarefas
+      SPRING_DATASOURCE_USERNAME: bruno
+      SPRING_DATASOURCE_PASSWORD: 1234
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
