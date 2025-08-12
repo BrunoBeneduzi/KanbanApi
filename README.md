@@ -1,8 +1,8 @@
-<h1 align="center">📋 Kanban API RESTful 📋</h1>
+# 📋 Kanban API RESTful 📋
 
 ---
 
-<h2 align="center">Descrição do Projeto</h2>
+## Descrição do Projeto
 
 O objetivo do projeto é criar uma ferramenta similar ao quadro kanban, onde cada usuário que faz o login  
 tem o seu próprio quadro e somente ele e o administrador podem mexer em suas tarefas. Porém, o administrador  
@@ -15,7 +15,7 @@ verificando o banco e confirmando se o usuário tem acesso às informações.
 
 ---
 
-<h2 align="center">Tecnologias Utilizadas</h2>
+## Tecnologias Utilizadas
 
 - Java 21  
 - Spring JPA  
@@ -29,50 +29,49 @@ verificando o banco e confirmando se o usuário tem acesso às informações.
 
 ---
 
-<h2 align="center">Como Usar</h2>
+## Como Usar
 
 1. Baixe o Docker Desktop para Windows/Mac.  
 2. Abra o terminal e navegue até a pasta do projeto:  
-```bash
-cd nome-do-projeto
-```
-3. Rode no terminal o seguinte comando para iniciar o proejto:
-```bash
-docker compose up -d
-```
-<h2 align="center">Comandos HTTP</h2>
+    
+        cd nome-do-projeto
 
-<h3 align="center">Tipos de Status
-CONCLUIDO
+3. Rode o comando para subir os containers:  
+    
+        docker compose up -d
 
-PENDENTE
+---
 
-PAUSADO
+## Comandos HTTP
 
-FAZENDO
+---
 
-<h3 align="center">Tipos de Role</h3>
-COLABORADOR
+### Tipos de Status
 
-ADM
+- CONCLUIDO  
+- PENDENTE  
+- PAUSADO  
+- FAZENDO  
 
-<h3 align="center">Autenticação</h3>
-POST /Login
-Corpo (JSON):
+---
 
+### Tipos de Role
+
+- COLABORADOR  
+- ADM  
+
+---
+
+### Autenticação
+
+**POST /Login**  
+Corpo (JSON):  
+```json
 {
   "email": "",
   "senha": ""
 }
-
-<h3 align="center">Comandos para cadastrar usuários - ADM</h3>
-POST /adm/cadastroUsuario
-
-{
-  "email": "",
-  "senha": "",
-  "role": ""
-}
+```
 PUT /adm/editarUsuario
 
 PUT /adm/editarSenha
@@ -83,7 +82,7 @@ GET /adm/exibirUsuario/{id}
 
 DELETE /adm/excluirUsuario
 
-<h3 align="center">ADM TAREFAS</h3>
+ADM TAREFAS
 POST /adm/cadastroTarefa
 
 {
@@ -100,7 +99,7 @@ GET /adm/exibirTasks
 
 GET /adm/exibirTask/{id}
 
-<h3 align="center">Comandos Colaborador para editar tarefas</h3>
+Comandos Colaborador para editar tarefas
 PUT /api/editarTarefa/{id}
 
 GET /api/exibiTask/{id}
