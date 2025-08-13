@@ -1,34 +1,13 @@
-O objetivo do projeto é criar uma ferramenta similar ao quadro kanban, onde cada usuario que faz o login
-tem  o seu proprio quadro e somente ele e o administrador pode mexer em suas tarefas, porem o administrador
-é quem cria as tarefas, aloca o funcionario, o funcionario tem acesso mais restrito, sendo possivel
-somente editar a tarefa, assim podendo colocar um status, descrição, titulo.
 
-esse projeto é uma API restfull que tem como meta se conectar com o front end, onde vai estar toda 
-parte visual dos quadros, e é por onde os pedidos http são feitos e enviados para o meu codigo, assim
-verificando o banco e verificando se o usuario tem acesso as informações.
-
-utilizei das tecnlogias:
-java 21
-spring jpa
-spring security
-Validator
-spring web
-spring devtools
-java JWT
-postgresql
-Docker + docker compose
-
-para usar baixe o docker desktop para windows/mac 
-
-vá até a posta do projeto com o cmd: cd nome-do-projeto
-
-depois rode o comando:  docker compose up -d
 
 
 
 
 Comandos http:
 
+
+tipos de status: CONCLUIDO, PENDENTE, PAUSADO, FAZENDO;
+tipo de role: COLABORADOR, ADM
 POST: /Login
 
 {
