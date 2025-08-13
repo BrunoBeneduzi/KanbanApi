@@ -48,7 +48,8 @@ adm@email.com
 
 3. Rode o comando para subir os containers:  
     
-        docker compose up -d
+       docker-compose up --build
+
 
 ---
 
@@ -75,7 +76,7 @@ adm@email.com
 ### Autenticação
 
 **POST /Login**  
-Corpo (JSON):  
+
 ```json
 {
   "email": "",
