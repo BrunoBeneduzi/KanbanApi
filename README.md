@@ -16,13 +16,12 @@ verificando o banco e confirmando se o usuário tem acesso às informações.
 Quando for rodado o codigo, ele vai gerar automaticamente 5 usuarios normais e 1 usuario adm, o email e senha para acesso deles são:
 
 adm@email.com
-colab1@email.com
-colab2@email.com
-colab3@email.com
-colab4@email.com
-colab5@email.com
-
-a senha para todos é "123456"
+<br>colab1@email.com
+<br>colab2@email.com
+<br>colab3@email.com
+<br>colab4@email.com
+<br>colab5@email.com
+<br>a senha para todos é "123456"
 
 ---
 
