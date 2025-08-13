@@ -13,6 +13,17 @@ Esse projeto é uma API RESTful que tem como meta se conectar com o front-end, o
 a parte visual dos quadros, e é por onde os pedidos HTTP são feitos e enviados para o código,  
 verificando o banco e confirmando se o usuário tem acesso às informações.
 
+Quando for rodado o codigo, ele vai gerar automaticamente 5 usuarios normais e 1 usuario adm, o email e senha para acesso deles são:
+
+adm@email.com
+colab1@email.com
+colab2@email.com
+colab3@email.com
+colab4@email.com
+colab5@email.com
+
+a senha para todos é "123456"
+
 ---
 
 ## Tecnologias Utilizadas
