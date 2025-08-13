@@ -96,6 +96,7 @@ DELETE /adm/excluirUsuario
 ADM TAREFAS
 POST /adm/cadastroTarefa
 
+```json
 {
   "titulo": "",
   "descricao": "",
@@ -103,14 +104,21 @@ POST /adm/cadastroTarefa
   "responsavel": "",
   "dataDeEntrega": ""
 }
+```
 
-PUT /adm/transferirTarefa/{id}
+PUT /adm/transferirTarefa/{id} <- Aqui você coloca o ID da tarefa e no json o email para quem vai receber a tarefa
+```json
+{
+    "email": ""
+}
+```
 
 GET /adm/exibirTasks
 
 GET /adm/exibirTask/{id}
 
 Comandos Colaborador para editar tarefas
+
 PUT /api/editarTarefa/{id}
 
 GET /api/exibiTask/{id}
