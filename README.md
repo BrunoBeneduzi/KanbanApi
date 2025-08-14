@@ -1,10 +1,10 @@
-# 📋 Kanban API RESTful 📋
+# 📋 Quadro de tarefas API RESTful 📋
 
 ---
 
 ## Descrição do Projeto
 
-O objetivo do projeto é criar uma ferramenta similar ao quadro kanban, onde cada usuário que faz o login  
+O objetivo do projeto é criar uma ferramenta de tarefas, onde cada usuário que faz o login  
 tem o seu próprio quadro e somente ele e o administrador podem mexer em suas tarefas. Porém, o administrador  
 é quem cria as tarefas, aloca o funcionário, e o funcionário tem acesso mais restrito, sendo possível  
 somente editar a tarefa, assim podendo colocar um status, descrição e título.
